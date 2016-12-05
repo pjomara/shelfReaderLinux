@@ -400,22 +400,22 @@ def comparer(call, next_call, second_last_call):
 # Audio and text output messages.
 def correct(next_call):
     os.system("aplay shelfReaderSounds/correct.wav")
-    print next_call,' is shelved correctly.'
+    print (next_call,' is shelved correctly.')
 
 def misshelved(next_call):
     os.system("aplay shelfReaderSounds/misshelved.wav")
-    print next_call,' is misshelved.'
+    print (next_call,' is misshelved.')
 
 def identical():
     os.system("aplay shelfReaderSounds/identical.wav")
-    print 'The call numbers are identical.'
+    print ('The call numbers are identical.')
 
 def prev_misshelved(call):
     os.system("aplay shelfReaderSounds/prevMisshelved.wav")
-    print 'The previous book, ',call,', is misshelved.'
+    print ('The previous book, ',call,', is misshelved.')
 
 def not_found():
     os.system("aplay shelfReaderSounds/notFound.wav")
-    print 'Barcode not found in database.'
+    print ('Barcode not found in database.')
     
 main()
