@@ -1,8 +1,9 @@
 #This is the call_parser for DVDs
 
 def main():
-    call= "dvd 150 "   
+    call= "4 dvd 150 oversize"  
     parse_call= call_parser(call)
+    print(parse_call)
 
 def call_parser(call):
     call = call.rstrip()
