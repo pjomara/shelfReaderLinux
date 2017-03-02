@@ -105,7 +105,6 @@ def call_parser(call):
     call= call.replace('0','',1)
     call= call.replace(' ','',1)
     call_div, call= splitter(call)
-        
     subject, cutter= call.split(' ',1)
     addl1= ('')
     addl2= ('')
