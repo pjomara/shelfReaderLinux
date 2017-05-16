@@ -4,7 +4,6 @@
 and in Linux/ Mac OS.  This version does not use the Winsounds library.
 Instead it uses os library and aplay to generate sounds.
 
-
 ShelfReader is an application that partially automates the process of
 shelf reading.
 Copyright (C) 2015  Parker O'Mara (pomar001@plattsburgh.edu)
@@ -23,8 +22,6 @@ Copyright (C) 2015  Parker O'Mara (pomar001@plattsburgh.edu)
     along with this program.  If not, see <http://www.gnu.org/licenses/>.'''
 
 import sqlite3
-import time
-import datetime
 import sys
 import os
 
