@@ -382,38 +382,38 @@ def comparer(call, next_call, second_last_call):
                                                             
 # Audio and text output messages.
 def correct(next_call):
-    #os.system("aplay shelfReaderSounds/correct.wav")
-    print('\a')
+    os.system("aplay shelfReaderSounds/correct.wav")
+    #print('\a')
     print (next_call,' is shelved correctly.')
 
 def misshelved(next_call):
-    #os.system("aplay shelfReaderSounds/misshelved.wav")
-    print('\a')
-    print('\a')
+    os.system("aplay shelfReaderSounds/misshelved.wav")
+    #print('\a')
+    #print('\a')
     print (next_call,' is misshelved.')
 
 def identical():
-    #os.system("aplay shelfReaderSounds/identical.wav")
-    print('\a')
-    print('\a')
-    print('\a')
-    print('\a')
+    os.system("aplay shelfReaderSounds/identical.wav")
+    #print('\a')
+    #print('\a')
+    #print('\a')
+    #print('\a')
     print ('The call numbers are identical.')
 
 def prev_misshelved(call):
-    #os.system("aplay shelfReaderSounds/prevMisshelved.wav")
-    print('\a')
-    print('\a')
-    print('\a')
+    os.system("aplay shelfReaderSounds/prevMisshelved.wav")
+    #print('\a')
+    #print('\a')
+    #print('\a')
     print ('The previous book, ',call,', is misshelved.')
 
 def not_found():
-    #os.system("aplay shelfReaderSounds/notFound.wav")
-    print('\a')
-    print('\a')
-    print('\a')
-    print('\a')
-    print('\a')
+    os.system("aplay shelfReaderSounds/notFound.wav")
+    #print('\a')
+    #print('\a')
+    #print('\a')
+    #print('\a')
+    #print('\a')
     print ('Barcode not found in database.')
     
 main()
