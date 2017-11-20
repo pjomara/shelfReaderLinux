@@ -27,13 +27,13 @@ import os
 
 def main():  
 
-	barcode = eval(input("Scan the first barcode: "))
+	barcode = input("Scan the first barcode: ")
 	if barcode==1:
 		print("User exited program.")		
 		sys.exit()
 	check= barcode_check(barcode)
 	while check==0:
-		barcode = eval(input("Scan the first barcode: "))
+		barcode = input("Scan the first barcode: ")
 		if barcode==1:
 			print("User exited program.")
 			sys.exit()
@@ -45,13 +45,13 @@ def main():
 		second_last_call= ('','','','','','','','','')   
 
 		while parse_call:
-			next_barcode = eval(input("Scan the next barcode: "))
+			next_barcode = input("Scan the next barcode: ")
 			if next_barcode == 1:
 				print("User exited program.")
 				sys.exit()
 			check= barcode_check(next_barcode)
 			while check==0:
-				next_barcode = eval(input("Scan the next barcode: "))
+				next_barcode = input("Scan the next barcode: ")
 				if next_barcode==1:
 					print("User exited program.")
 					sys.exit()
